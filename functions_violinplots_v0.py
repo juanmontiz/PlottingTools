@@ -45,8 +45,9 @@ def plot_violins_generalized(ax, datasets, labels,
         order=labels,
     )
     # Set transparency (alpha) for violins
-    for pc in violin_parts.collections:
-        pc.set_alpha(0.6)  # Adjust transparency level (0.0 = fully transparent, 1.0 = opaque)
+    if show_swarm_plot:
+        for pc in violin_parts.collections:
+            pc.set_alpha(0.6)  # Adjust transparency level (0.0 = fully transparent, 1.0 = opaque)
 
     if show_swarm_plot:
         sns.swarmplot(
