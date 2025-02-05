@@ -3,7 +3,7 @@ import seaborn as sns
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 
-def plot_violins_generalized(ax, datasets, labels,
+def plot_violins_generalized(ax, dataset, labels,
                              violin_palette=None, swarmplot_palette=None,
                              font_scale=1.4,
                              point_size=6,
@@ -18,9 +18,9 @@ def plot_violins_generalized(ax, datasets, labels,
     
     sns.set_context('notebook', font_scale=font_scale)
     
-    # Combine datasets into a single DataFrame
+    # Combine dataset into a single DataFrame
     all_data = []
-    for i, (data, label) in enumerate(zip(datasets, labels)):
+    for i, (data, label) in enumerate(zip(dataset, labels)):
         temp_df = pd.DataFrame(data, columns=['value'])
         temp_df['cond'] = label  # Condition labels
         all_data.append(temp_df)
@@ -28,9 +28,9 @@ def plot_violins_generalized(ax, datasets, labels,
     
     # Set default palettes if not provided
     if violin_palette is None:
-        violin_palette = sns.color_palette("deep")[0:len(datasets)]
+        violin_palette = sns.color_palette("deep")[0:len(dataset)]
     if swarmplot_palette is None:
-        swarmplot_palette = sns.color_palette("deep")[0:len(datasets)]
+        swarmplot_palette = sns.color_palette("deep")[0:len(dataset)]
     
     violin_parts = sns.violinplot(
         y="value",

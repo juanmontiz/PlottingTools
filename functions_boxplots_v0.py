@@ -3,7 +3,7 @@ import seaborn as sns
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 
-def plot_boxes_generalized(ax, datasets, labels,
+def plot_boxes_generalized(ax, dataset, labels,
                            box_palette=None, swarmplot_palette=None,
                            font_scale=1.4,
                            point_size=6,
@@ -18,9 +18,9 @@ def plot_boxes_generalized(ax, datasets, labels,
     # Create seaborn context
     sns.set_context('notebook', font_scale=font_scale)
 
-    # Combine all datasets into a single DataFrame
+    # Combine all dataset into a single DataFrame
     all_data = []
-    for i, (data, label) in enumerate(zip(datasets, labels)):
+    for i, (data, label) in enumerate(zip(dataset, labels)):
         temp_df = pd.DataFrame(data, columns=['value'])
         temp_df['cond'] = label  # Add a column for condition labels
         all_data.append(temp_df)
@@ -28,9 +28,9 @@ def plot_boxes_generalized(ax, datasets, labels,
 
     # Set default palettes if not provided
     if box_palette is None:
-        box_palette = sns.color_palette("deep")[0:len(datasets)]
+        box_palette = sns.color_palette("deep")[0:len(dataset)]
     if swarmplot_palette is None:
-        swarmplot_palette = sns.color_palette("deep")[0:len(datasets)]
+        swarmplot_palette = sns.color_palette("deep")[0:len(dataset)]
 
     sns.boxplot(
         y="value",
