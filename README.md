@@ -8,6 +8,6 @@
 - If saveplot=True, the plot is saved in PNG, PDF, and SVG formats. Provide the filename **without extension**.
 
 ## Examples of box, violin plots, and box+swarm+halfviolin:
-![box](https://github.com/user-attachments/assets/ba6a4381-1e48-49dc-880b-e41f5b17304e)
-![violin](https://github.com/user-attachments/assets/1f4e5944-141b-47e5-b93b-088f085c8c4f)
+![box](https://github.com/user-attachments/assets/2155d93e-4e5e-40fa-aa49-2c1dddb5bb21)
+![violin](https://github.com/user-attachments/assets/ac34aca7-2eec-419c-bc9c-d9e1e72e842a)
 ![box+swarm+violin](https://github.com/user-attachments/assets/f91b1925-aba2-4a2e-a815-0c75a2048f36)
