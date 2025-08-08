@@ -10,4 +10,4 @@
 ## Examples of box, violin plots, and box+swarm+halfviolin:
 ![box](https://github.com/user-attachments/assets/2155d93e-4e5e-40fa-aa49-2c1dddb5bb21)
 ![violin](https://github.com/user-attachments/assets/ac34aca7-2eec-419c-bc9c-d9e1e72e842a)
-![box+swarm+violin](https://github.com/user-attachments/assets/f91b1925-aba2-4a2e-a815-0c75a2048f36)
+![box+swarm+violin](https://github.com/user-attachments/assets/cbf84582-f7df-4bb9-a26d-78a13d5f1beb)
