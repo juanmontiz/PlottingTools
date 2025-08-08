@@ -9,7 +9,7 @@
 - Added an option to join points from joint distributions if they have the same number of elements (box plots, and box-swarm-halfviolin).
 
 ## Examples of box, violin plots, and box+swarm+halfviolin:
-⚠️ Cannot connect pairs between 'label 1' and 'label 2': different lengths.\n
+⚠️ Cannot connect pairs between 'label 1' and 'label 2': different lengths.  
 ⚠️ Cannot connect pairs between 'label 2' and 'label 3': different lengths.
 ![box](https://github.com/user-attachments/assets/c6e32230-8a72-46c5-b8e5-c3e8c88af14d)
 ![violin](https://github.com/user-attachments/assets/ac34aca7-2eec-419c-bc9c-d9e1e72e842a)
