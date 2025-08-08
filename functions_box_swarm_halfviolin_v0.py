@@ -131,6 +131,8 @@ def plot_half_violin_box_swarm(ax, dataset, labels,
     ax.set_ylabel(y_axis_label)
     ax.set_title(plot_title)
     ax.set_xlabel('')
+
+    # Update axis limits
     if y_max is None:
         y_max = yposition
     else:
