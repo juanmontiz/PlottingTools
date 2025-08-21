@@ -7,11 +7,10 @@
 - The code has to be executed twice for the **font_scale** to take effect (the ghosts in the machine...).
 - If saveplot=True, the plot is saved in PNG, PDF, and SVG formats. Provide the filename **without extension**.
 - Added an option to join points from joint distributions if they have the same number of elements (box plots, and box-swarm-halfviolin).
-- If connect_pairs=True, a straight line is plotted between the ith elements of adjacent distributions ONLY if they have the same number of elements (length).
+- If connect_pairs=True, a straight line is plotted between the ith elements of adjacent distributions ONLY if they have the same number of elements (length). Else, a warning message is shown:
+  ⚠️ Cannot connect pairs between 'label 1' and 'label 2': different lengths.
   
 ## Examples of box, violin plots, and box+swarm+halfviolin:
-⚠️ Cannot connect pairs between 'label 1' and 'label 2': different lengths.  
-⚠️ Cannot connect pairs between 'label 2' and 'label 3': different lengths.
 ![box](https://github.com/user-attachments/assets/c6e32230-8a72-46c5-b8e5-c3e8c88af14d)
 ![violin](https://github.com/user-attachments/assets/ac34aca7-2eec-419c-bc9c-d9e1e72e842a)
 ![box+swarm+violin](https://github.com/user-attachments/assets/c16436ee-a029-4385-a131-615cb6aa51e8)
